@@ -1,0 +1,142 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "The Technical Architect",
+      "archetype": "Swiss High-Contrast",
+      "tone": "Authoritative, Precise, Minimalist, Premium",
+      "keywords": ["Structure", "Clarity", "Depth", "Precision"]
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Manrope, sans-serif",
+        "body": "Inter, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "scale": {
+        "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-none",
+        "h2": "text-3xl md:text-5xl font-semibold tracking-tight",
+        "h3": "text-xl md:text-2xl font-medium tracking-normal",
+        "body": "text-base md:text-lg leading-relaxed text-zinc-400",
+        "label": "text-xs font-mono uppercase tracking-widest text-zinc-500"
+      }
+    },
+    "colors": {
+      "palette": {
+        "background": "#09090b",
+        "surface": "#18181b",
+        "surface_highlight": "#27272a",
+        "border": "#27272a",
+        "primary": "#fafafa",
+        "secondary": "#a1a1aa",
+        "accent_tech": "#3b82f6",
+        "accent_manager": "#f59e0b",
+        "success": "#10b981",
+        "error": "#ef4444"
+      },
+      "usage": {
+        "bg_main": "bg-zinc-950",
+        "bg_card": "bg-zinc-900/50 backdrop-blur-xl border border-white/5",
+        "text_primary": "text-zinc-50",
+        "text_secondary": "text-zinc-400",
+        "text_muted": "text-zinc-500",
+        "border_subtle": "border-zinc-800",
+        "gradient_hero": "bg-gradient-to-br from-zinc-900 to-zinc-950"
+      }
+    },
+    "spacing": {
+      "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+      "section_padding": "py-24 md:py-32",
+      "element_gap": "gap-8"
+    },
+    "visual_enhancers": {
+      "radius": "rounded-none md:rounded-lg",
+      "shadows": "shadow-[0_0_0_1px_rgba(255,255,255,0.05),0_4px_12px_rgba(0,0,0,0.5)]",
+      "glass": "bg-black/40 backdrop-blur-md border border-white/10",
+      "grid_pattern": "bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
+    }
+  },
+  "components": {
+    "StatusBadge": {
+      "path": "src/components/ui/StatusBadge.jsx",
+      "description": "A pill-shaped badge indicating project status.",
+      "variants": {
+        "completed": "bg-emerald-500/10 text-emerald-500 border-emerald-500/20",
+        "in_progress": "bg-amber-500/10 text-amber-500 border-amber-500/20",
+        "academic": "bg-blue-500/10 text-blue-500 border-blue-500/20",
+        "professional": "bg-purple-500/10 text-purple-500 border-purple-500/20"
+      }
+    },
+    "ProjectCard": {
+      "path": "src/components/features/ProjectCard.jsx",
+      "description": "Minimalist card with hover reveal effects. Image desaturated by default, full color on hover.",
+      "structure": "Image top (aspect-video), Content bottom. Title + Badges. 'View Project' arrow icon on hover."
+    },
+    "Hero": {
+      "path": "src/components/layout/Hero.jsx",
+      "description": "Asymmetrical layout. Left: Typography (Name, Role). Right: Abstract 3D/Texture or Minimalist Code Snippet visual.",
+      "elements": ["Name: Léopold Mols", "Role: Technical Manager & CTO", "CTA: View Work"]
+    },
+    "PDFViewer": {
+      "path": "src/components/features/PDFViewer.jsx",
+      "library": "react-pdf or iframe fallback",
+      "style": "Embedded in a modal or dedicated page section. Must have 'Download' button prominent."
+    },
+    "ContactForm": {
+      "path": "src/components/features/ContactForm.jsx",
+      "fields": ["Name", "Email", "Company", "Budget", "Project Type", "Message"],
+      "style": "Minimalist inputs with bottom border only (Underline style) or subtle bg-zinc-900 inputs."
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1737505598998-693328b57ae3?q=85&w=1920&auto=format&fit=crop",
+      "about_bg": "https://images.unsplash.com/photo-1766866810622-4652cb6bd42e?q=85&w=1920&auto=format&fit=crop",
+      "tech_abstract": "https://images.unsplash.com/photo-1762019274671-15d0f7a01466?q=85&w=1920&auto=format&fit=crop",
+      "office_detail": "https://images.unsplash.com/photo-1771652827460-66db6e231b48?q=85&w=1920&auto=format&fit=crop"
+    },
+    "icons": "Use lucide-react. Icon set: 'Code', 'Layers', 'Terminal', 'Cpu', 'Briefcase', 'GraduationCap', 'Download', 'Send', 'Linkedin', 'Github', 'Mail'"
+  },
+  "motion": {
+    "library": "framer-motion",
+    "preset": {
+      "fade_up": {
+        "initial": { "opacity": 0, "y": 20 },
+        "whileInView": { "opacity": 1, "y": 0 },
+        "transition": { "duration": 0.5, "ease": "easeOut" }
+      },
+      "stagger_container": {
+        "hidden": { "opacity": 0 },
+        "show": {
+          "opacity": 1,
+          "transition": { "staggerChildren": 0.1 }
+        }
+      }
+    }
+  },
+  "accessibility": {
+    "rules": [
+      "Ensure text contrast > 4.5:1",
+      "Focus rings must be visible (ring-2 ring-blue-500)",
+      "All images must have alt text",
+      "Toggle for Reduced Motion preference"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "1. Initialize React project with Vite if not present.",
+    "2. Install Tailwind CSS and standard plugins (typography, forms).",
+    "3. Create the folder structure: components/ui, components/layout, components/features, pages, hooks, context.",
+    "4. Implement the 'ThemeProvider' for dark/light mode persistence.",
+    "5. Build the layout shell (Navbar, Footer) first.",
+    "6. Use the provided image URLs for section backgrounds where appropriate.",
+    "7. For the CV section, ensure a fallback exists if the PDF fails to load.",
+    "8. MOCK DATA: Create a 'projects.json' with 4-6 sample projects (Mix of Academic and Professional) to populate the grid.",
+    "9. STYLING: strictly adhere to the zinc-950/zinc-900 color scheme. Do not use default blue/slate.",
+    "10. BADGES: Ensure visual distinction between 'Academic' (Blue/Indigo) and 'Professional' (Emerald/Amber)."
+  ],
+  "UNIVERSAL_GUIDELINES": [
+    "Do not use generic gradients.",
+    "Use 'tracking-tighter' for all headings to give a premium feel.",
+    "Buttons should be distinct: Primary (White bg, Black text), Secondary (Zinc-800 bg, White text).",
+    "Always add hover states: hover:opacity-80 or hover:bg-zinc-800."
+  ]
+}
