@@ -1,0 +1,321 @@
+{
+  "timestamp": "2026-03-03T13:24:02.269984",
+  "base_url": "https://ca0b3b1e-8872-4f05-a588-981114536efb.preview.emergentagent.com",
+  "summary": {
+    "tests_run": 7,
+    "tests_passed": 7,
+    "success_rate": 100.0
+  },
+  "test_results": [
+    {
+      "test": "Health Check",
+      "status": "PASS",
+      "response_code": 200,
+      "response_data": {
+        "status": "ok",
+        "timestamp": "2026-03-03T13:24:01.431771+00:00"
+      }
+    },
+    {
+      "test": "Get All Projects",
+      "status": "PASS",
+      "response_code": 200,
+      "response_data": [
+        {
+          "id": "cloud-orchestrator",
+          "title": "Cloud Orchestrator Platform",
+          "shortDescription": "Plateforme d'orchestration multi-cloud avec gestion automatisee des deploiements et monitoring temps reel.",
+          "stack": [
+            "Python",
+            "FastAPI",
+            "React",
+            "TypeScript",
+            "Docker",
+            "Kubernetes",
+            "AWS",
+            "Terraform",
+            "PostgreSQL",
+            "Redis"
+          ],
+          "status": "completed",
+          "type": "fullstack",
+          "isAcademic": false,
+          "date": "2024-03",
+          "links": {
+            "github": "",
+            "demo": ""
+          },
+          "image": ""
+        },
+        {
+          "id": "secure-auth-gateway",
+          "title": "Secure Auth Gateway",
+          "shortDescription": "Passerelle d'authentification SSO/OAuth2 haute disponibilite pour ecosysteme microservices.",
+          "stack": [
+            "Go",
+            "Redis",
+            "Nginx",
+            "Docker",
+            "Vault",
+            "PostgreSQL",
+            "Prometheus",
+            "SAML"
+          ],
+          "status": "completed",
+          "type": "backend",
+          "isAcademic": false,
+          "date": "2023-09",
+          "links": {
+            "github": "",
+            "demo": ""
+          },
+          "image": ""
+        },
+        {
+          "id": "data-pipeline-analytics",
+          "title": "Data Pipeline & Analytics",
+          "shortDescription": "Pipeline ETL temps reel et dashboard analytique pour le suivi de KPIs metier critiques.",
+          "stack": [
+            "Python",
+            "Apache Kafka",
+            "Spark",
+            "ClickHouse",
+            "FastAPI",
+            "React",
+            "D3.js",
+            "Docker"
+          ],
+          "status": "completed",
+          "type": "fullstack",
+          "isAcademic": false,
+          "date": "2024-08",
+          "links": {
+            "github": "",
+            "demo": ""
+          },
+          "image": ""
+        },
+        {
+          "id": "devops-automation-suite",
+          "title": "DevOps Automation Suite",
+          "shortDescription": "Suite d'outils d'automatisation DevOps avec IaC, monitoring avance et self-healing.",
+          "stack": [
+            "Terraform",
+            "Ansible",
+            "Go",
+            "React",
+            "Kubernetes",
+            "ArgoCD",
+            "Prometheus",
+            "Grafana"
+          ],
+          "status": "in_progress",
+          "type": "devops",
+          "isAcademic": false,
+          "date": "2025-01",
+          "links": {
+            "github": "",
+            "demo": ""
+          },
+          "image": ""
+        },
+        {
+          "id": "ai-code-reviewer",
+          "title": "AI Code Reviewer",
+          "shortDescription": "Outil de revue de code assistee par IA integre au workflow GitLab CI/CD.",
+          "stack": [
+            "Python",
+            "FastAPI",
+            "LLM",
+            "GitLab API",
+            "Docker",
+            "TimescaleDB",
+            "Redis"
+          ],
+          "status": "in_progress",
+          "type": "backend",
+          "isAcademic": false,
+          "date": "2025-06",
+          "links": {
+            "github": "",
+            "demo": ""
+          },
+          "image": ""
+        },
+        {
+          "id": "distributed-systems-lab",
+          "title": "Distributed Systems Lab",
+          "shortDescription": "Implementation d'algorithmes de consensus distribue (Raft, Paxos) et systeme de fichiers distribue.",
+          "stack": [
+            "Go",
+            "gRPC",
+            "Protocol Buffers",
+            "Docker",
+            "Bash"
+          ],
+          "status": "completed",
+          "type": "backend",
+          "isAcademic": true,
+          "date": "2023-01",
+          "links": {
+            "github": "",
+            "demo": ""
+          },
+          "image": ""
+        },
+        {
+          "id": "compiler-from-scratch",
+          "title": "Mini Compiler",
+          "shortDescription": "Compilateur complet pour un langage custom : lexer, parser, AST, optimisation, generation de code x86.",
+          "stack": [
+            "C",
+            "x86 Assembly",
+            "Make",
+            "GDB",
+            "Valgrind"
+          ],
+          "status": "completed",
+          "type": "backend",
+          "isAcademic": true,
+          "date": "2022-06",
+          "links": {
+            "github": "",
+            "demo": ""
+          },
+          "image": ""
+        },
+        {
+          "id": "smart-campus-iot",
+          "title": "Smart Campus IoT",
+          "shortDescription": "Plateforme IoT pour campus universitaire : capteurs, agregation temps reel, dashboard de monitoring.",
+          "stack": [
+            "Node.js",
+            "React",
+            "MQTT",
+            "InfluxDB",
+            "ESP32",
+            "Docker",
+            "Nginx",
+            "Chart.js"
+          ],
+          "status": "completed",
+          "type": "fullstack",
+          "isAcademic": true,
+          "date": "2023-06",
+          "links": {
+            "github": "",
+            "demo": ""
+          },
+          "image": ""
+        }
+      ]
+    },
+    {
+      "test": "Get Specific Project (cloud-orchestrator)",
+      "status": "PASS",
+      "response_code": 200,
+      "response_data": {
+        "id": "cloud-orchestrator",
+        "title": "Cloud Orchestrator Platform",
+        "shortDescription": "Plateforme d'orchestration multi-cloud avec gestion automatisee des deploiements et monitoring temps reel.",
+        "longDescription": "Conception et developpement d'une plateforme complete d'orchestration multi-cloud permettant la gestion centralisee d'infrastructures AWS, GCP et Azure. Le systeme inclut un pipeline CI/CD automatise, un monitoring temps reel avec alerting, et une interface d'administration intuitive.",
+        "context": "Dans le cadre de la transformation digitale d'un grand groupe industriel, j'ai dirige une equipe de 6 developpeurs pour concevoir une solution interne remplacant les outils proprietaires existants.",
+        "objectives": [
+          "Centraliser la gestion multi-cloud",
+          "Reduire de 60% le temps de deploiement",
+          "Mettre en place un monitoring proactif",
+          "Automatiser les rollbacks en cas d'echec"
+        ],
+        "architecture": "Architecture microservices avec API Gateway, services de deploiement containerises (Docker/K8s), base de donnees PostgreSQL pour la configuration, Redis pour le cache, et Grafana/Prometheus pour le monitoring.",
+        "responsibilities": [
+          "Direction technique de l'equipe (6 devs)",
+          "Architecture systeme et choix technologiques",
+          "Revue de code et standards qualite",
+          "Gestion du backlog et sprint planning",
+          "Communication avec les stakeholders"
+        ],
+        "stack": [
+          "Python",
+          "FastAPI",
+          "React",
+          "TypeScript",
+          "Docker",
+          "Kubernetes",
+          "AWS",
+          "Terraform",
+          "PostgreSQL",
+          "Redis"
+        ],
+        "status": "completed",
+        "type": "fullstack",
+        "isAcademic": false,
+        "date": "2024-03",
+        "learnings": "Ce projet m'a permis d'approfondir mes competences en architecture distribuee et en gestion d'equipe technique. La complexite du multi-cloud m'a appris l'importance d'abstraire les specificites de chaque provider derriere des interfaces unifiees.",
+        "management": {
+          "teamSize": 6,
+          "methodology": "Scrum",
+          "duration": "8 mois",
+          "highlights": [
+            "Sprint planning bi-hebdomadaire avec retrospectives",
+            "Mise en place de code reviews systematiques",
+            "Formation et mentoring de 2 developpeurs juniors",
+            "Reduction effective de 45% du temps de deploiement"
+          ]
+        },
+        "links": {
+          "github": "",
+          "demo": ""
+        },
+        "image": ""
+      }
+    },
+    {
+      "test": "Get Non-existent Project",
+      "status": "PASS",
+      "response_code": 404,
+      "response_data": {
+        "detail": "Projet introuvable"
+      }
+    },
+    {
+      "test": "Valid Contact Form Submission",
+      "status": "PASS",
+      "response_code": 200,
+      "response_data": {
+        "success": true,
+        "message": "Message envoye avec succes."
+      }
+    },
+    {
+      "test": "Invalid Email Contact Submission",
+      "status": "PASS",
+      "response_code": 422,
+      "response_data": {
+        "detail": [
+          {
+            "type": "value_error",
+            "loc": [
+              "body",
+              "email"
+            ],
+            "msg": "Value error, Adresse email invalide.",
+            "input": "invalid-email-format",
+            "ctx": {
+              "error": {}
+            },
+            "url": "https://errors.pydantic.dev/2.12/v/value_error"
+          }
+        ]
+      }
+    },
+    {
+      "test": "Honeypot Contact Submission",
+      "status": "PASS",
+      "response_code": 200,
+      "response_data": {
+        "success": true,
+        "message": "Message envoye avec succes."
+      }
+    }
+  ]
+}

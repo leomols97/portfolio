@@ -1,0 +1,284 @@
+[
+  {
+    "id": "cloud-orchestrator",
+    "title": "Cloud Orchestrator Platform",
+    "shortDescription": "Plateforme d'orchestration multi-cloud avec gestion automatisee des deploiements et monitoring temps reel.",
+    "longDescription": "Conception et developpement d'une plateforme complete d'orchestration multi-cloud permettant la gestion centralisee d'infrastructures AWS, GCP et Azure. Le systeme inclut un pipeline CI/CD automatise, un monitoring temps reel avec alerting, et une interface d'administration intuitive.",
+    "context": "Dans le cadre de la transformation digitale d'un grand groupe industriel, j'ai dirige une equipe de 6 developpeurs pour concevoir une solution interne remplacant les outils proprietaires existants.",
+    "objectives": [
+      "Centraliser la gestion multi-cloud",
+      "Reduire de 60% le temps de deploiement",
+      "Mettre en place un monitoring proactif",
+      "Automatiser les rollbacks en cas d'echec"
+    ],
+    "architecture": "Architecture microservices avec API Gateway, services de deploiement containerises (Docker/K8s), base de donnees PostgreSQL pour la configuration, Redis pour le cache, et Grafana/Prometheus pour le monitoring.",
+    "responsibilities": [
+      "Direction technique de l'equipe (6 devs)",
+      "Architecture systeme et choix technologiques",
+      "Revue de code et standards qualite",
+      "Gestion du backlog et sprint planning",
+      "Communication avec les stakeholders"
+    ],
+    "stack": ["Python", "FastAPI", "React", "TypeScript", "Docker", "Kubernetes", "AWS", "Terraform", "PostgreSQL", "Redis"],
+    "status": "completed",
+    "type": "fullstack",
+    "isAcademic": false,
+    "date": "2024-03",
+    "learnings": "Ce projet m'a permis d'approfondir mes competences en architecture distribuee et en gestion d'equipe technique. La complexite du multi-cloud m'a appris l'importance d'abstraire les specificites de chaque provider derriere des interfaces unifiees.",
+    "management": {
+      "teamSize": 6,
+      "methodology": "Scrum",
+      "duration": "8 mois",
+      "highlights": [
+        "Sprint planning bi-hebdomadaire avec retrospectives",
+        "Mise en place de code reviews systematiques",
+        "Formation et mentoring de 2 developpeurs juniors",
+        "Reduction effective de 45% du temps de deploiement"
+      ]
+    },
+    "links": {
+      "github": "",
+      "demo": ""
+    },
+    "image": ""
+  },
+  {
+    "id": "secure-auth-gateway",
+    "title": "Secure Auth Gateway",
+    "shortDescription": "Passerelle d'authentification SSO/OAuth2 haute disponibilite pour ecosysteme microservices.",
+    "longDescription": "Developpement d'une passerelle d'authentification centralisee supportant SSO, OAuth2, et SAML. Le systeme gere l'authentification de plus de 50 000 utilisateurs actifs avec un uptime de 99.97%.",
+    "context": "Face a la multiplication des services internes et a la necessite de centraliser la gestion des identites, j'ai concu et implemente cette gateway comme composant critique de l'infrastructure.",
+    "objectives": [
+      "Implementer SSO pour tous les services internes",
+      "Garantir un uptime superieur a 99.9%",
+      "Supporter OAuth2 et SAML 2.0",
+      "Mettre en place un audit trail complet"
+    ],
+    "architecture": "Service stateless deploye en cluster (3 instances minimum), avec Redis pour la gestion des sessions, HashiCorp Vault pour les secrets, et un reverse proxy Nginx en frontal.",
+    "responsibilities": [
+      "Lead developpeur et architecte securite",
+      "Redaction des specifications techniques",
+      "Implementation des protocoles OAuth2/SAML",
+      "Tests de charge et de penetration"
+    ],
+    "stack": ["Go", "Redis", "Nginx", "Docker", "Vault", "PostgreSQL", "Prometheus", "SAML"],
+    "status": "completed",
+    "type": "backend",
+    "isAcademic": false,
+    "date": "2023-09",
+    "learnings": "La securite ne se negocie pas. Ce projet m'a convaincu de l'importance des audits de securite reguliers et de l'automatisation des tests de penetration. L'uptime de 99.97% a ete atteint grace a une architecture sans etat rigoureuse.",
+    "management": {
+      "teamSize": 4,
+      "methodology": "Kanban",
+      "duration": "5 mois",
+      "highlights": [
+        "Coordination etroite avec l'equipe securite",
+        "Audit externe reussi du premier coup",
+        "Documentation technique exhaustive (50+ pages)",
+        "Onboarding de 12 services en 3 semaines"
+      ]
+    },
+    "links": {
+      "github": "",
+      "demo": ""
+    },
+    "image": ""
+  },
+  {
+    "id": "data-pipeline-analytics",
+    "title": "Data Pipeline & Analytics",
+    "shortDescription": "Pipeline ETL temps reel et dashboard analytique pour le suivi de KPIs metier critiques.",
+    "longDescription": "Construction d'un pipeline de donnees end-to-end avec ingestion temps reel (Kafka), transformation (Spark), stockage (ClickHouse), et visualisation via un dashboard React custom avec D3.js.",
+    "context": "Le departement marketing avait besoin de KPIs en temps reel pour optimiser ses campagnes. Les solutions SaaS existantes etaient trop couteuses ou insuffisamment personnalisables pour les besoins specifiques.",
+    "objectives": [
+      "Ingestion temps reel avec latence inferieure a 5 secondes",
+      "Dashboard interactif avec filtres dynamiques",
+      "Export automatique de rapports PDF hebdomadaires",
+      "Systeme d'alerting sur seuils configurables"
+    ],
+    "architecture": "Apache Kafka pour l'ingestion, Spark Streaming pour la transformation, ClickHouse pour le stockage analytique, FastAPI pour l'API REST, React + D3.js pour la visualisation.",
+    "responsibilities": [
+      "Architecture data et choix technologiques",
+      "Developpement backend et pipeline ETL",
+      "Optimisation des performances (tuning Kafka/Spark)",
+      "Formation de l'equipe data aux nouveaux outils"
+    ],
+    "stack": ["Python", "Apache Kafka", "Spark", "ClickHouse", "FastAPI", "React", "D3.js", "Docker"],
+    "status": "completed",
+    "type": "fullstack",
+    "isAcademic": false,
+    "date": "2024-08",
+    "learnings": "Le traitement de donnees en temps reel requiert une approche fondamentalement differente du batch. La gestion du backpressure et des erreurs de serialisation m'a beaucoup appris sur la resilience des systemes de streaming.",
+    "links": {
+      "github": "",
+      "demo": ""
+    },
+    "image": ""
+  },
+  {
+    "id": "devops-automation-suite",
+    "title": "DevOps Automation Suite",
+    "shortDescription": "Suite d'outils d'automatisation DevOps avec IaC, monitoring avance et self-healing.",
+    "longDescription": "Developpement d'une suite complete d'outils DevOps comprenant l'Infrastructure as Code (Terraform + Ansible), un systeme de monitoring avec self-healing, et un portail developpeur pour le provisioning en self-service.",
+    "context": "Projet en cours visant a industrialiser les pratiques DevOps d'une scale-up en forte croissance. L'objectif est de permettre aux equipes de developpement d'etre autonomes sur le deploiement et le provisioning.",
+    "objectives": [
+      "Infrastructure as Code pour toute l'infrastructure",
+      "Portail self-service pour les developpeurs",
+      "Self-healing automatique des services critiques",
+      "Reduction du MTTR de 70%"
+    ],
+    "architecture": "Terraform pour l'IaC, Ansible pour la configuration, custom operators Kubernetes pour le self-healing, portail React + API Go pour le self-service developpeur.",
+    "responsibilities": [
+      "Direction technique et architecture",
+      "Definition de la roadmap technique",
+      "Relations avec les equipes produit",
+      "Mise en place des standards DevOps"
+    ],
+    "stack": ["Terraform", "Ansible", "Go", "React", "Kubernetes", "ArgoCD", "Prometheus", "Grafana"],
+    "status": "in_progress",
+    "type": "devops",
+    "isAcademic": false,
+    "date": "2025-01",
+    "learnings": "L'adoption des pratiques DevOps est autant un defi humain que technique. Le changement de culture est la partie la plus complexe mais aussi la plus gratifiante.",
+    "links": {
+      "github": "",
+      "demo": ""
+    },
+    "image": ""
+  },
+  {
+    "id": "ai-code-reviewer",
+    "title": "AI Code Reviewer",
+    "shortDescription": "Outil de revue de code assistee par IA integre au workflow GitLab CI/CD.",
+    "longDescription": "Developpement d'un outil de revue de code intelligent qui analyse automatiquement les merge requests, detecte les anti-patterns, suggere des ameliorations, et s'integre nativement dans le pipeline GitLab CI/CD.",
+    "context": "Projet personnel en cours, motive par la volonte d'ameliorer la qualite du code dans les equipes que je manage, tout en reduisant le temps passe en revue manuelle repetitive.",
+    "objectives": [
+      "Detection automatique des anti-patterns courants",
+      "Suggestions contextuelles d'amelioration",
+      "Integration native GitLab via webhooks",
+      "Support multi-langages (Python, Go, TypeScript)"
+    ],
+    "architecture": "Service Python avec modele LLM fine-tune pour l'analyse de code, API FastAPI, integration GitLab webhooks, stockage des metriques et historiques dans TimescaleDB.",
+    "responsibilities": [
+      "Conception complete du produit",
+      "Developpement backend et integration IA",
+      "Fine-tuning du modele sur des corpus de code",
+      "Tests et validation sur des projets reels"
+    ],
+    "stack": ["Python", "FastAPI", "LLM", "GitLab API", "Docker", "TimescaleDB", "Redis"],
+    "status": "in_progress",
+    "type": "backend",
+    "isAcademic": false,
+    "date": "2025-06",
+    "learnings": "L'integration d'IA dans les workflows existants necessite un equilibre delicat entre pertinence des suggestions et reduction du bruit. Trop de faux positifs tuent l'adoption.",
+    "links": {
+      "github": "",
+      "demo": ""
+    },
+    "image": ""
+  },
+  {
+    "id": "distributed-systems-lab",
+    "title": "Distributed Systems Lab",
+    "shortDescription": "Implementation d'algorithmes de consensus distribue (Raft, Paxos) et systeme de fichiers distribue.",
+    "longDescription": "Projet academique d'implementation d'algorithmes fondamentaux des systemes distribues : Raft pour le consensus, un systeme de fichiers distribue avec replication, et un service de discovery pour les noeuds du cluster.",
+    "context": "Realise dans le cadre du cours de Systemes Distribues en Master. L'objectif etait de comprendre en profondeur les problematiques de consensus, de tolerance aux pannes et de coherence dans les systemes repartis.",
+    "objectives": [
+      "Implementer l'algorithme de consensus Raft",
+      "Construire un systeme de fichiers distribue avec replication",
+      "Gerer la tolerance aux pannes (crash de noeuds)",
+      "Demontrer la coherence eventuelle vs forte"
+    ],
+    "architecture": "Cluster de noeuds communicant via gRPC, chaque noeud implementant la machine a etats Raft, avec un systeme de fichiers chunke et replique sur 3 noeuds minimum.",
+    "responsibilities": [
+      "Developpement complet de l'algorithme Raft",
+      "Implementation du systeme de fichiers distribue",
+      "Documentation technique detaillee",
+      "Presentation orale devant jury"
+    ],
+    "stack": ["Go", "gRPC", "Protocol Buffers", "Docker", "Bash"],
+    "status": "completed",
+    "type": "backend",
+    "isAcademic": true,
+    "date": "2023-01",
+    "learnings": "Comprendre Raft en l'implementant change fondamentalement la facon dont on apprehende les systemes distribues en production. La theorie prend tout son sens quand on doit gerer les cas limites a l'implementation.",
+    "links": {
+      "github": "",
+      "demo": ""
+    },
+    "image": ""
+  },
+  {
+    "id": "compiler-from-scratch",
+    "title": "Mini Compiler",
+    "shortDescription": "Compilateur complet pour un langage custom : lexer, parser, AST, optimisation, generation de code x86.",
+    "longDescription": "Projet academique de construction d'un compilateur complet pour un langage imperatif simplifie. Inclut toutes les phases classiques : analyse lexicale, syntaxique, semantique, optimisation de l'AST, et generation de code assembleur x86.",
+    "context": "Realise en binome dans le cadre du cours de Compilation. Le projet couvrait l'integralite du pipeline de compilation, de la source au binaire executable, en passant par toutes les phases intermediaires.",
+    "objectives": [
+      "Implementer un lexer et parser complets",
+      "Construire et optimiser l'AST (dead code elimination, constant folding)",
+      "Generer du code assembleur x86 fonctionnel",
+      "Supporter les types, boucles, fonctions et recursion"
+    ],
+    "architecture": "Pipeline sequentiel : Source -> Lexer (tokens) -> Parser (AST) -> Semantic Analyzer -> Optimizer -> Code Generator (x86 ASM) -> Linker (GNU ld).",
+    "responsibilities": [
+      "Developpement du parser et de l'optimiseur AST",
+      "Implementation de la generation de code x86",
+      "Tests unitaires et tests d'integration",
+      "Documentation technique du pipeline"
+    ],
+    "stack": ["C", "x86 Assembly", "Make", "GDB", "Valgrind"],
+    "status": "completed",
+    "type": "backend",
+    "isAcademic": true,
+    "date": "2022-06",
+    "learnings": "Ce projet m'a donne une comprehension profonde de ce qui se passe 'sous le capot' des langages que j'utilise au quotidien. L'optimisation de l'AST est un probleme fascinant qui touche a la theorie des graphes.",
+    "links": {
+      "github": "",
+      "demo": ""
+    },
+    "image": ""
+  },
+  {
+    "id": "smart-campus-iot",
+    "title": "Smart Campus IoT",
+    "shortDescription": "Plateforme IoT pour campus universitaire : capteurs, agregation temps reel, dashboard de monitoring.",
+    "longDescription": "Projet academique en equipe de 5 : conception et developpement d'une plateforme IoT complete pour monitorer les conditions environnementales d'un campus (temperature, humidite, qualite de l'air, occupation des salles).",
+    "context": "Projet de fin d'etudes realise en collaboration avec l'administration universitaire. Deploye en conditions reelles avec de vrais capteurs ESP32 dans 3 batiments du campus pendant 2 mois.",
+    "objectives": [
+      "Collecter les donnees de 50+ capteurs en temps reel",
+      "Dashboard de monitoring avec visualisations interactives",
+      "Systeme d'alertes configurables (seuils, anomalies)",
+      "Recommandations d'optimisation energetique"
+    ],
+    "architecture": "Capteurs ESP32 -> MQTT Broker (Mosquitto) -> Service d'ingestion (Node.js) -> InfluxDB (time series) -> API REST (Express) -> Dashboard React avec charts temps reel.",
+    "responsibilities": [
+      "Chef de projet et coordinateur d'equipe (5 personnes)",
+      "Architecture systeme globale",
+      "Developpement du backend et de l'API",
+      "Coordination avec l'administration universitaire"
+    ],
+    "stack": ["Node.js", "React", "MQTT", "InfluxDB", "ESP32", "Docker", "Nginx", "Chart.js"],
+    "status": "completed",
+    "type": "fullstack",
+    "isAcademic": true,
+    "date": "2023-06",
+    "learnings": "Gerer une equipe de 5 personnes avec des competences variees (hardware, backend, frontend, data) m'a appris l'importance cruciale de la communication claire et de la documentation partagee. Le deploiement en conditions reelles a ete un defi enrichissant.",
+    "management": {
+      "teamSize": 5,
+      "methodology": "Agile adapte",
+      "duration": "4 mois",
+      "highlights": [
+        "Coordination hardware/software entre sous-equipes",
+        "Deploiement et maintenance en conditions reelles",
+        "Presentation devant jury academique + administration",
+        "Note obtenue : 18/20"
+      ]
+    },
+    "links": {
+      "github": "",
+      "demo": ""
+    },
+    "image": ""
+  }
+]
